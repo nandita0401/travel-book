@@ -1,0 +1,66 @@
+/* General background color and font */
+body {
+  background-color: #f4f7fa;  /* Light gray background */
+  font-family: 'Arial', sans-serif;  /* Simple font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the vertical timeline container */
+.vertical-timeline {
+  margin: 50px auto;
+  padding: 0;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;  /* White background for the timeline */
+  border-radius: 8px;  /* Rounded corners for the timeline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around timeline */
+}
+
+/* Timeline item with smooth transition */
+.vertical-timeline-element {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 60px;  /* Space for the event icon (removed, but keeping space) */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for timeline date and title */
+.vertical-timeline-element-date {
+  font-size: 16px;
+  color: #ff1744;  /* Red color for date */
+  font-weight: bold;
+}
+
+.vertical-timeline-element-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ff1744;  /* Red color for title */
+}
+
+.vertical-timeline-element-description {
+  font-size: 16px;
+  color: #555;  /* Slightly darker text for description */
+  margin-top: 10px;
+  line-height: 1.5;  /* More space between lines */
+}
+
+/* Styling for images and videos inside timeline element */
+.vertical-timeline-element img,
+.vertical-timeline-element video {
+  width: 100%;  /* Make sure image or video takes up the full width */
+  border-radius: 8px;  /* Rounded corners for media */
+  margin-top: 15px;
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 768px) {
+  .vertical-timeline {
+    width: 95%;  /* Adjust width on smaller screens */
+    padding: 20px;
+  }
+}
